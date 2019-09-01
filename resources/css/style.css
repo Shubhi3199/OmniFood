@@ -24,7 +24,7 @@ header{
 }
 .hero-text-box{
     position: absolute; /*To center this vertically and horizontally*/
-    width:1140px;
+    width:1200px;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);  /*The reason why transform: translate(-50%, -50%) is required is because you want
@@ -85,24 +85,70 @@ h1{
 }
 .main-nav{
     list-style: none;
-    float:right;
+    /*float:right;*/
     margin-top: 55px;
+
 }
 .main-nav li {
-    display: inline-block;
+    /*display: inline-block;*/
+    float:right;
     margin-left: 30px;
+    height:40px;
+    width: 160px;
+
 }
 .main-nav li a:link,
 .main-nav li a:visited{
     padding: 8px 0;
     text-decoration: none;
     color:#fff;
-     text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 90%;
     transition: border-bottom 0.2ms;
+    background-color: transparent;
+
+
 }
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 3px solid #e67e22;
 
 }
+.sub-nav-1{
+    padding-top: 20px;
+    width:auto;
+}
+.sub-nav-1 li {
+    padding-top: 10px;
+    display: block;
+    background-color: transparent;
+    }
+.main-nav li .sub-nav-1 li a {
+    color: #e67e22;
+    font-weight:300;
+    /*border:1px solid #e67e22;*/
+    padding-left: 25px;
+    /*transition: border-bottom 0.2ms;*/
+}
+.sub-nav-1 li a:hover,
+.sub-nav-1 li a:active{
+    border-bottom:none;
+}
+/*.main-nav li:link .sub-nav-1 li,*/
+/*.main-nav li :visited .sub-nav-1 li{*/
+/*    display: none;*/
+/*}*/
+/*.main-nav li :hover .sub-nav-1 li,*/
+/*.main-nav li :active .sub-nav-1 li{*/
+/*    display: block;*/
+/*}*/
+.main-nav li .sub-nav-1 li{
+    display: none;
+}
+.main-nav li:hover .sub-nav-1 li{
+    display:block
+}
+
+
+
+
