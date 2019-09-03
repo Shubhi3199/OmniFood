@@ -20,10 +20,10 @@ section{
     padding: 80px 0;
 }
 header{
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.71)), url("img/hero.jpg");
-      background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.71)), url("img/hero.jpg");
+    background-size:cover;
     background-position: center;
-      height:100vh;
+    height:100vh;
 }
 .hero-text-box{
     position: absolute; /*To center this vertically and horizontally*/
@@ -37,8 +37,8 @@ header{
 h1,
 h2,
 h3{
-       /*for Relative sizing of the text global font-size is 20 px set in html (6 line)
-                       and now we'll specify text size in % for relativity*/
+    /*for Relative sizing of the text global font-size is 20 px set in html (6 line)
+                    and now we'll specify text size in % for relativity*/
     font-weight: 300;
     text-transform: uppercase; /*uppercase text*/
     /*word-spacing:4px;*/
@@ -93,7 +93,7 @@ h2:after{
 }
 .btn:link,
 .btn:visited{
-     display:inline-block;
+    display:inline-block;
     padding:10px 30px;
     text-decoration: none;
     font-weight:300;
@@ -140,21 +140,29 @@ h2:after{
 }
 /*-------STICKY NAV-------------*/
 .sticky{
-    position: fixed;
+    position: fixed;     /*irrespective of scrolling this remains intact*/
     top: 0;
     left:0;
     width:100%;
-    background-color: rgba(230, 126, 34, 0.91);
+    /*background-color: rgba(255,255,255,1);*/
+    /*box-shadow: 0 2px 2px #555555;*/
+    background: transparent;
+}
+.sticky-down{
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 2px 2px #555555;
+    z-index: 9999;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 18px 0;
     text-decoration: none;
-    color: #fff;
+    color: #555555;
     text-transform: uppercase;
     font-size: 90%;
     transition: border-bottom 0.2ms;
     background-color: transparent;
+
 }
 .sticky .main-nav li a:hover,
 .sticky .main-nav li a:active{
@@ -194,7 +202,7 @@ h2:after{
     padding-top: 10px;
     display: block;
     background-color: transparent;
-    }
+}
 .main-nav li .sub-nav-1 li a {
     color: #e67e22;
     font-weight:300;
@@ -289,4 +297,3 @@ h2:after{
 .btn-app img{
     height:50px;
 }
-
